@@ -22,17 +22,20 @@ The Web Warrior dashboard a responsive react app. It provides you with a collect
 
 Clone the repository with the following command:
 
-bash
+```bash
 git clone https://github.com/qamarali205/Dashboard.git
+```
 
 
 Run in terminal this command:
 
-bash
+```bash
 npm install
+```
 
 
 Then run this command to start your local server
 
-bash
+```bash
 npm start
+```
