@@ -5,9 +5,25 @@ import { Button } from '.';
 import { userProfileData } from '../data/dummy';
 import { useStateContext } from '../contexts/ContextProvider';
 import avatar from '../data/avatar.jpg';
+import { useState, useEffect} from 'react';
+import {useNavigate } from 'react-router-dom';
 
 const UserProfile = () => {
+  const navigate = useNavigate();
+  // const [username, setUsername] = useState("");
   const { currentColor } = useStateContext();
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
+
+    const storedUsername = localStorage.getItem("username");
+  
+
+
+  const handleLogout = () => {
+    localStorage.removeItem("username");
+    setIsLoggedIn(false);
+    navigate("/");
+    window.location.reload();
+  };
 
   return (
     <div className="nav-item absolute right-1 top-16 bg-white dark:bg-[#42464D] p-8 rounded-lg w-96">
@@ -28,7 +44,7 @@ const UserProfile = () => {
           alt="user-profile"
         />
         <div>
-          <p className="font-semibold text-xl dark:text-gray-200"> Qamar Ali </p>
+          <p className="font-semibold text-xl dark:text-gray-200"> {storedUsername} </p>
           <p className="text-gray-500 text-sm dark:text-gray-400">  Administrator   </p>
           <p className="text-gray-500 text-sm font-semibold dark:text-gray-400"> info@admin.com </p>
         </div>
@@ -51,14 +67,18 @@ const UserProfile = () => {
           </div>
         ))}
       </div>
-      <div className="mt-5">
-        <Button
+      <div className="mt-5" style={{display:"flex",justifyContent:"center"}}>
+        {/* <Button
           color="white"
           bgColor={currentColor}
           text="Logout"
           borderRadius="10px"
           width="full"
-        />
+          onClick = {handleLogout}
+          
+          // onClick={handleLogout}
+        /> */}
+        <button onClick={handleLogout} style={{backgroundColor:"rgb(3, 201, 215)",color:"white", width:"90%", borderRadius:"5px"}} className="border-color border-b-1 p-3">Logout</button>
       </div>
     </div>
 

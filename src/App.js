@@ -1,17 +1,18 @@
-import React, { useEffect } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 import { Navbar, Footer, Sidebar, ThemeSettings } from './components';
 import { Ecommerce, Orders, Calendar, Employees, Stacked, Pyramid, Customers, Kanban, Line, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor } from './pages';
-// import Login from './pages/login/Login.jsx'
 import './App.css';
+import LoginPage from './pages/LoginPage';
 
 import { useStateContext } from './contexts/ContextProvider';
 
 const App = () => {
   const { setCurrentColor, setCurrentMode, currentMode, activeMenu, currentColor, themeSettings, setThemeSettings } = useStateContext();
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
     const currentThemeColor = localStorage.getItem('colorMode');
@@ -20,11 +21,42 @@ const App = () => {
       setCurrentColor(currentThemeColor);
       setCurrentMode(currentThemeMode);
     }
+
+    const userLoggedIn = localStorage.getItem('username');
+    if (userLoggedIn) {
+      setIsLoggedIn(true);
+    }
   }, []);
 
+
+  const handleLogout = () => {
+    localStorage.removeItem('isLoggedIn');
+    setIsLoggedIn(false);
+  };
+  // 
+  
+  if(isLoggedIn===false){
+  return(
+  // 
+  <>
+  
+  <BrowserRouter>
+  <Routes>
+    
+    <Route path="/" element={(<LoginPage />)} />
+    <Route path="/login" element={(<LoginPage />)} />
+  </Routes>
+  </BrowserRouter>
+  </>
+      )
+    
+  }
+
+else  {
   return (
     <div className={currentMode === 'Dark' ? 'dark' : ''}>
       <BrowserRouter>
+      
         <div className="flex relative dark:bg-main-dark-bg">
           <div className="fixed right-4 bottom-4" style={{ zIndex: '1000' }}>
             <TooltipComponent
@@ -66,14 +98,14 @@ const App = () => {
 
               <Routes>
                 {/* dashboard  */}
-                <Route path="/" element={(<Ecommerce />)} />
-                <Route path="/ecommerce" element={(<Ecommerce />)} />
+                
+                <Route  path="/" element={(<Ecommerce />)} />
+                <Route path="ecommerce" element={(<Ecommerce />)} />
 
                 {/* pages  */}
                 <Route path="/orders" element={<Orders />} />
                 <Route path="/employees" element={<Employees />} />
                 <Route path="/customers" element={<Customers />} />
-                {/* <Route path="/login" element={<Login />} /> */}
 
                 {/* apps  */}
                 <Route path="/kanban" element={<Kanban />} />
@@ -82,7 +114,7 @@ const App = () => {
                 <Route path="/color-picker" element={<ColorPicker />} />
 
                 {/* charts  */}
-                <Route path="/line" element={<Line />} />
+                {/* <Route path="/line" element={<Line />} /> */}
                 <Route path="/area" element={<Area />} />
                 <Route path="/bar" element={<Bar />} />
                 <Route path="/pie" element={<Pie />} />
@@ -96,9 +128,11 @@ const App = () => {
             <Footer />
           </div>
         </div>
+      
       </BrowserRouter>
     </div>
   );
+          };
 };
 
 export default App;
