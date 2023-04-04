@@ -39,6 +39,7 @@ const LoginPage = () => {
         <div className="login-page">
             <div className="login-inner">
       <form onSubmit={handleLogin}>
+        <h1 className="form-heading">Admin Panel</h1>
         <label>
           Username:
           <input
