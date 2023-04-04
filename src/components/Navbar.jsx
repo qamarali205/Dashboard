@@ -49,6 +49,7 @@ const Navbar = () => {
   }, [screenSize]);
 
   const handleActiveMenu = () => setActiveMenu(!activeMenu);
+  const storedUsername = localStorage.getItem("username");
 
   return (
     <div className="flex justify-between p-2 md:ml-6 md:mr-6 relative">
@@ -71,7 +72,7 @@ const Navbar = () => {
             <p>
               <span className="text-gray-400 text-14">Hi,</span>{' '}
               <span className="text-gray-400 font-bold ml-1 text-14">
-                Qamar
+                {storedUsername}
               </span>
             </p>
             <MdKeyboardArrowDown className="text-gray-400 text-14" />
