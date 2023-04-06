@@ -57,7 +57,7 @@
 
 .login-label {
   font-size: 16px;
-  color: #6C6C6C;
+  color: white;
   font-weight: bold;
   letter-spacing: 2 px;
   display: flex;
@@ -71,7 +71,7 @@
   padding: 10px;
   background-color: #1A2226;
   border: none;
-  border-bottom: 2px solid #0DB8DE;
+  border: 2px solid #0DB8DE;
   border-radius: 5px;
   margin-top: 5px;
   font-size: 16px;
