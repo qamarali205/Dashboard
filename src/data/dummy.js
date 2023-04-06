@@ -476,10 +476,6 @@ export const links = [
         name: 'editor',
         icon: <FiEdit />,
       },
-      {
-        name: 'color-picker',
-        icon: <BiColorFill />,
-      },
     ],
   },
   {
@@ -1448,7 +1444,7 @@ export const customersData = [
 export const employeesData = [
   {
     EmployeeID: 1,
-    Name: 'Nancy Davolio',
+    Name: 'Komal Wankhade',
     Title: 'Sales Representative',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1458,7 +1454,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 2,
-    Name: 'Nasimiyu Danai',
+    Name: 'Supriya Pawar',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1468,7 +1464,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 3,
-    Name: 'Iulia Albu',
+    Name: 'Sayali Meshram',
     Title: 'HR',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1478,7 +1474,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 4,
-    Name: 'Siegbert Gottfried',
+    Name: 'Ashok Huche',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1488,7 +1484,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 5,
-    Name: 'Omar Darobe',
+    Name: 'Rahul Singh',
     Title: 'HR',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1498,7 +1494,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 4,
-    Name: 'Penjani Inyene',
+    Name: 'Bhupen Kumar',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1508,7 +1504,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 5,
-    Name: 'Miron Vitold',
+    Name: 'Aman Kumar',
     Title: 'HR',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1518,7 +1514,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 1,
-    Name: 'Nancy Davolio',
+    Name: 'Arpit Choudhary',
     Title: 'Sales Representative',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1529,7 +1525,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 2,
-    Name: 'Nasimiyu Danai',
+    Name: 'Shubahni Kamble',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1539,7 +1535,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 3,
-    Name: 'Iulia Albu',
+    Name: 'Pallavi Bansod',
     Title: 'HR',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1549,7 +1545,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 4,
-    Name: 'Siegbert Gottfried',
+    Name: 'Nitin Arakka',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1559,7 +1555,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 5,
-    Name: 'Omar Darobe',
+    Name: 'Vijay Landge',
     Title: 'HR',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1569,7 +1565,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 4,
-    Name: 'Penjani Inyene',
+    Name: 'Shubahsh Rajput',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1579,7 +1575,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 5,
-    Name: 'Miron Vitold',
+    Name: 'Ramesh Gupta',
     Title: 'HR',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1589,7 +1585,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 1,
-    Name: 'Nancy Davolio',
+    Name: 'Shubahsh Rajput',
     Title: 'Sales Representative',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1599,7 +1595,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 2,
-    Name: 'Nasimiyu Danai',
+    Name: 'Dimpal Thakur',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1609,7 +1605,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 3,
-    Name: 'Iulia Albu',
+    Name: 'Swati Topre',
     Title: 'HR',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1619,7 +1615,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 4,
-    Name: 'Siegbert Gottfried',
+    Name: 'Rohit Pandey',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1629,7 +1625,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 5,
-    Name: 'Omar Darobe',
+    Name: 'Shubham Kumar',
     Title: 'HR',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1639,7 +1635,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 4,
-    Name: 'Penjani Inyene',
+    Name: 'Kartik Deshmane',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1649,7 +1645,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 5,
-    Name: 'Miron Vitold',
+    Name: 'Mohd Afak',
     Title: 'HR',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1659,7 +1655,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 1,
-    Name: 'Nancy Davolio',
+    Name: 'Shubahsh Rajput',
     Title: 'Sales Representative',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1670,7 +1666,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 2,
-    Name: 'Nasimiyu Danai',
+    Name: 'Dimpal Thakur',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1680,7 +1676,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 3,
-    Name: 'Iulia Albu',
+    Name: 'Swati Topre',
     Title: 'HR',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1690,7 +1686,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 4,
-    Name: 'Siegbert Gottfried',
+    Name: 'Rohit Pandey',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1700,7 +1696,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 5,
-    Name: 'Omar Darobe',
+    Name: 'Shubham Kumar',
     Title: 'HR',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1710,7 +1706,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 4,
-    Name: 'Penjani Inyene',
+    Name: 'Kartik Deshmane',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1720,7 +1716,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 5,
-    Name: 'Miron Vitold',
+    Name: 'Mohd Afak',
     Title: 'HR',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1730,7 +1726,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 1,
-    Name: 'Nancy Davolio',
+    Name: 'Shubahsh Rajput',
     Title: 'Sales Representative',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1741,7 +1737,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 2,
-    Name: 'Nasimiyu Danai',
+    Name: 'Dimpal Thakur',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1751,7 +1747,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 3,
-    Name: 'Iulia Albu',
+    Name: 'Swati Topre',
     Title: 'HR',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1761,7 +1757,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 4,
-    Name: 'Siegbert Gottfried',
+    Name: 'Rohit Pandey',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1771,7 +1767,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 5,
-    Name: 'Omar Darobe',
+    Name: 'Shubham Kumar',
     Title: 'HR',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1781,7 +1777,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 4,
-    Name: 'Penjani Inyene',
+    Name: 'Kartik Deshmane',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1791,7 +1787,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 5,
-    Name: 'Miron Vitold',
+    Name: 'Mohd Afak',
     Title: 'HR',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1801,7 +1797,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 1,
-    Name: 'Nancy Davolio',
+    Name: 'Shubahsh Rajput',
     Title: 'Sales Representative',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1812,7 +1808,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 2,
-    Name: 'Nasimiyu Danai',
+    Name: 'Dimpal Thakur',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1822,7 +1818,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 3,
-    Name: 'Iulia Albu',
+    Name: 'Swati Topre',
     Title: 'HR',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1832,7 +1828,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 4,
-    Name: 'Siegbert Gottfried',
+    Name: 'Rohit Pandey',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1842,7 +1838,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 5,
-    Name: 'Omar Darobe',
+    Name: 'Shubham Kumar',
     Title: 'HR',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1852,7 +1848,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 4,
-    Name: 'Penjani Inyene',
+    Name: 'Kartik Deshmane',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1862,7 +1858,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 5,
-    Name: 'Miron Vitold',
+    Name: 'Mohd Afak',
     Title: 'HR',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1872,7 +1868,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 1,
-    Name: 'Nancy Davolio',
+    Name: 'Shubahsh Rajput',
     Title: 'Sales Representative',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1883,7 +1879,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 2,
-    Name: 'Nasimiyu Danai',
+    Name: 'Dimpal Thakur',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1893,7 +1889,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 3,
-    Name: 'Iulia Albu',
+    Name: 'Swati Topre',
     Title: 'HR',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1903,7 +1899,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 4,
-    Name: 'Siegbert Gottfried',
+    Name: 'Rohit Pandey',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1913,7 +1909,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 5,
-    Name: 'Omar Darobe',
+    Name: 'Shubham Kumar',
     Title: 'HR',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1923,7 +1919,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 4,
-    Name: 'Penjani Inyene',
+    Name: 'Kartik Deshmane',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1933,7 +1929,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 5,
-    Name: 'Miron Vitold',
+    Name: 'Mohd Afak',
     Title: 'HR',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1943,7 +1939,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 1,
-    Name: 'Nancy Davolio',
+    Name: 'Shubahsh Rajput',
     Title: 'Sales Representative',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1954,7 +1950,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 2,
-    Name: 'Nasimiyu Danai',
+    Name: 'Dimpal Thakur',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1964,7 +1960,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 3,
-    Name: 'Iulia Albu',
+    Name: 'Rashmita Bhagat',
     Title: 'HR',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1974,7 +1970,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 4,
-    Name: 'Siegbert Gottfried',
+    Name: 'Rohit Pandey',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1984,7 +1980,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 5,
-    Name: 'Omar Darobe',
+    Name: 'Shubham Kumar',
     Title: 'HR',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -1994,7 +1990,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 4,
-    Name: 'Penjani Inyene',
+    Name: 'Kartik Deshmane',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -2004,7 +2000,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 5,
-    Name: 'Miron Vitold',
+    Name: 'Mohd Afak',
     Title: 'HR',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -2014,7 +2010,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 1,
-    Name: 'Nancy Davolio',
+    Name: 'Shubahsh Rajput',
     Title: 'Sales Representative',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -2025,7 +2021,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 2,
-    Name: 'Nasimiyu Danai',
+    Name: 'Dimpal Thakur',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -2035,7 +2031,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 3,
-    Name: 'Iulia Albu',
+    Name: 'Swati Topre',
     Title: 'HR',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -2045,7 +2041,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 4,
-    Name: 'Siegbert Gottfried',
+    Name: 'Rohit Pandey',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -2055,7 +2051,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 5,
-    Name: 'Omar Darobe',
+    Name: 'Shubham Kumar',
     Title: 'HR',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -2065,7 +2061,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 4,
-    Name: 'Penjani Inyene',
+    Name: 'Kartik Deshmane',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -2075,7 +2071,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 5,
-    Name: 'Miron Vitold',
+    Name: 'Mohd Afak',
     Title: 'HR',
     HireDate: '01/02/2021',
     Country: 'India',
@@ -2133,7 +2129,7 @@ export const ordersData = [
   },
   {
     OrderID: 748975,
-    CustomerName: 'Miron Vitold',
+    CustomerName: 'Mohd Afak',
     TotalAmount: 23.99,
     OrderItems: 'Healthcare Erbology',
     Location: 'Spain',
@@ -2144,7 +2140,7 @@ export const ordersData = [
   },
   {
     OrderID: 94757,
-    CustomerName: 'Omar Darobe',
+    CustomerName: 'Shubham Kumar',
     TotalAmount: 95.99,
     OrderItems: 'Makeup Lancome Rouge',
     Location: 'India',
@@ -2277,7 +2273,7 @@ export const ordersData = [
   },
   {
     OrderID: 748975,
-    CustomerName: 'Miron Vitold',
+    CustomerName: 'Mohd Afak',
     TotalAmount: 23.99,
     OrderItems: 'Healthcare Erbology',
     Location: 'Spain',
@@ -2288,7 +2284,7 @@ export const ordersData = [
   },
   {
     OrderID: 94757,
-    CustomerName: 'Omar Darobe',
+    CustomerName: 'Shubham Kumar',
     TotalAmount: 95.99,
     OrderItems: 'Makeup Lancome Rouge',
     Location: 'India',
@@ -2421,7 +2417,7 @@ export const ordersData = [
   },
   {
     OrderID: 748975,
-    CustomerName: 'Miron Vitold',
+    CustomerName: 'Mohd Afak',
     TotalAmount: 23.99,
     OrderItems: 'Healthcare Erbology',
     Location: 'Spain',
@@ -2432,7 +2428,7 @@ export const ordersData = [
   },
   {
     OrderID: 94757,
-    CustomerName: 'Omar Darobe',
+    CustomerName: 'Shubham Kumar',
     TotalAmount: 95.99,
     OrderItems: 'Makeup Lancome Rouge',
     Location: 'India',
@@ -2565,7 +2561,7 @@ export const ordersData = [
   },
   {
     OrderID: 748975,
-    CustomerName: 'Miron Vitold',
+    CustomerName: 'Mohd Afak',
     TotalAmount: 23.99,
     OrderItems: 'Healthcare Erbology',
     Location: 'Spain',
@@ -2576,7 +2572,7 @@ export const ordersData = [
   },
   {
     OrderID: 94757,
-    CustomerName: 'Omar Darobe',
+    CustomerName: 'Shubham Kumar',
     TotalAmount: 95.99,
     OrderItems: 'Makeup Lancome Rouge',
     Location: 'India',
@@ -2709,7 +2705,7 @@ export const ordersData = [
   },
   {
     OrderID: 748975,
-    CustomerName: 'Miron Vitold',
+    CustomerName: 'Mohd Afak',
     TotalAmount: 23.99,
     OrderItems: 'Healthcare Erbology',
     Location: 'Spain',
@@ -2720,7 +2716,7 @@ export const ordersData = [
   },
   {
     OrderID: 94757,
-    CustomerName: 'Omar Darobe',
+    CustomerName: 'Shubham Kumar',
     TotalAmount: 95.99,
     OrderItems: 'Makeup Lancome Rouge',
     Location: 'India',
