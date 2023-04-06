@@ -935,8 +935,8 @@ export const customersData = [
   {
     CustomerID: 1002,
 
-    CustomerName: 'Sunil Joshi',
-    CustomerEmail: 'sunil@gmail.com',
+    CustomerName: 'Neha Joshi',
+    CustomerEmail: 'neha@gmail.com',
     ProjectName: 'Elite Admin',
     Status: 'Active',
     CustomerImage:
@@ -950,8 +950,8 @@ export const customersData = [
   {
     CustomerID: 1003,
 
-    CustomerName: 'Andrew McDownland',
-    CustomerEmail: 'andrew@gmail.com',
+    CustomerName: 'Pooja Mittal',
+    CustomerEmail: 'poojamittal@gmail.com',
     ProjectName: 'Real Homes WP Theme',
     Status: 'Pending',
     CustomerImage:
@@ -964,8 +964,8 @@ export const customersData = [
   {
     CustomerID: 1004,
 
-    CustomerName: 'Christopher Jamil',
-    CustomerEmail: 'jamil@gmail.com',
+    CustomerName: 'Rahul Singh',
+    CustomerEmail: 'rahulsingh@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
     Status: 'Completed',
     CustomerImage:
@@ -1005,8 +1005,8 @@ export const customersData = [
   {
     CustomerID: 1007,
 
-    CustomerName: 'Sunil Joshi',
-    CustomerEmail: 'sunil@gmail.com',
+    CustomerName: 'Neha Joshi',
+    CustomerEmail: 'neha@gmail.com',
     ProjectName: 'Elite Admin',
     Status: 'Active',
     CustomerImage:
@@ -1020,8 +1020,8 @@ export const customersData = [
   {
     CustomerID: 1008,
 
-    CustomerName: 'Andrew McDownland',
-    CustomerEmail: 'andrew@gmail.com',
+    CustomerName: 'Pooja Mittal',
+    CustomerEmail: 'poojamittal@gmail.com',
     ProjectName: 'Real Homes WP Theme',
     Status: 'Pending',
     CustomerImage:
@@ -1034,8 +1034,8 @@ export const customersData = [
   {
     CustomerID: 1009,
 
-    CustomerName: 'Christopher Jamil',
-    CustomerEmail: 'jamil@gmail.com',
+    CustomerName: 'Rahul Singh',
+    CustomerEmail: 'rahulsingh@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
     Status: 'Completed',
     CustomerImage:
@@ -1075,8 +1075,8 @@ export const customersData = [
   {
     CustomerID: 1012,
 
-    CustomerName: 'Sunil Joshi',
-    CustomerEmail: 'sunil@gmail.com',
+    CustomerName: 'Neha Joshi',
+    CustomerEmail: 'neha@gmail.com',
     ProjectName: 'Elite Admin',
     Status: 'Active',
     CustomerImage:
@@ -1090,8 +1090,8 @@ export const customersData = [
   {
     CustomerID: 1013,
 
-    CustomerName: 'Andrew McDownland',
-    CustomerEmail: 'andrew@gmail.com',
+    CustomerName: 'Pooja Mittal',
+    CustomerEmail: 'poojamittal@gmail.com',
     ProjectName: 'Real Homes WP Theme',
     Status: 'Pending',
     CustomerImage:
@@ -1104,8 +1104,8 @@ export const customersData = [
   {
     CustomerID: 1014,
 
-    CustomerName: 'Christopher Jamil',
-    CustomerEmail: 'jamil@gmail.com',
+    CustomerName: 'Rahul Singh',
+    CustomerEmail: 'rahulsingh@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
     Status: 'Completed',
     CustomerImage:
@@ -1145,8 +1145,8 @@ export const customersData = [
   {
     CustomerID: 1017,
 
-    CustomerName: 'Sunil Joshi',
-    CustomerEmail: 'sunil@gmail.com',
+    CustomerName: 'Neha Joshi',
+    CustomerEmail: 'neha@gmail.com',
     ProjectName: 'Elite Admin',
     Status: 'Active',
     CustomerImage:
@@ -1160,8 +1160,8 @@ export const customersData = [
   {
     CustomerID: 1018,
 
-    CustomerName: 'Andrew McDownland',
-    CustomerEmail: 'andrew@gmail.com',
+    CustomerName: 'Pooja Mittal',
+    CustomerEmail: 'poojamittal@gmail.com',
     ProjectName: 'Real Homes WP Theme',
     Status: 'Pending',
     CustomerImage:
@@ -1174,8 +1174,8 @@ export const customersData = [
   {
     CustomerID: 1019,
 
-    CustomerName: 'Christopher Jamil',
-    CustomerEmail: 'jamil@gmail.com',
+    CustomerName: 'Rahul Singh',
+    CustomerEmail: 'rahulsingh@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
     Status: 'Completed',
     CustomerImage:
@@ -1215,8 +1215,8 @@ export const customersData = [
   {
     CustomerID: 1022,
 
-    CustomerName: 'Sunil Joshi',
-    CustomerEmail: 'sunil@gmail.com',
+    CustomerName: 'Neha Joshi',
+    CustomerEmail: 'neha@gmail.com',
     ProjectName: 'Elite Admin',
     Status: 'Active',
     CustomerImage:
@@ -1230,8 +1230,8 @@ export const customersData = [
   {
     CustomerID: 1023,
 
-    CustomerName: 'Andrew McDownland',
-    CustomerEmail: 'andrew@gmail.com',
+    CustomerName: 'Pooja Mittal',
+    CustomerEmail: 'poojamittal@gmail.com',
     ProjectName: 'Real Homes WP Theme',
     Status: 'Pending',
     CustomerImage:
@@ -1244,8 +1244,8 @@ export const customersData = [
   {
     CustomerID: 1024,
 
-    CustomerName: 'Christopher Jamil',
-    CustomerEmail: 'jamil@gmail.com',
+    CustomerName: 'Rahul Singh',
+    CustomerEmail: 'rahulsingh@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
     Status: 'Completed',
     CustomerImage:
@@ -1285,8 +1285,8 @@ export const customersData = [
   {
     CustomerID: 1027,
 
-    CustomerName: 'Sunil Joshi',
-    CustomerEmail: 'sunil@gmail.com',
+    CustomerName: 'Neha Joshi',
+    CustomerEmail: 'neha@gmail.com',
     ProjectName: 'Elite Admin',
     Status: 'Active',
     CustomerImage:
@@ -1300,8 +1300,8 @@ export const customersData = [
   {
     CustomerID: 1028,
 
-    CustomerName: 'Andrew McDownland',
-    CustomerEmail: 'andrew@gmail.com',
+    CustomerName: 'Pooja Mittal',
+    CustomerEmail: 'poojamittal@gmail.com',
     ProjectName: 'Real Homes WP Theme',
     Status: 'Pending',
     CustomerImage:
@@ -1314,8 +1314,8 @@ export const customersData = [
   {
     CustomerID: 1029,
 
-    CustomerName: 'Christopher Jamil',
-    CustomerEmail: 'jamil@gmail.com',
+    CustomerName: 'Rahul Singh',
+    CustomerEmail: 'rahulsingh@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
     Status: 'Completed',
     CustomerImage:
@@ -1355,8 +1355,8 @@ export const customersData = [
   {
     CustomerID: 1032,
 
-    CustomerName: 'Sunil Joshi',
-    CustomerEmail: 'sunil@gmail.com',
+    CustomerName: 'Neha Joshi',
+    CustomerEmail: 'neha@gmail.com',
     ProjectName: 'Elite Admin',
     Status: 'Active',
     CustomerImage:
@@ -1370,8 +1370,8 @@ export const customersData = [
   {
     CustomerID: 1033,
 
-    CustomerName: 'Andrew McDownland',
-    CustomerEmail: 'andrew@gmail.com',
+    CustomerName: 'Pooja Mittal',
+    CustomerEmail: 'poojamittal@gmail.com',
     ProjectName: 'Real Homes WP Theme',
     Status: 'Pending',
     CustomerImage:
@@ -1384,8 +1384,8 @@ export const customersData = [
   {
     CustomerID: 1034,
 
-    CustomerName: 'Christopher Jamil',
-    CustomerEmail: 'jamil@gmail.com',
+    CustomerName: 'Rahul Singh',
+    CustomerEmail: 'rahulsingh@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
     Status: 'Completed',
     CustomerImage:
@@ -1425,8 +1425,8 @@ export const customersData = [
   {
     CustomerID: 1037,
 
-    CustomerName: 'Sunil Joshi',
-    CustomerEmail: 'sunil@gmail.com',
+    CustomerName: 'Neha Joshi',
+    CustomerEmail: 'neha@gmail.com',
     ProjectName: 'Elite Admin',
     Status: 'Active',
     CustomerImage:
@@ -1440,8 +1440,8 @@ export const customersData = [
   {
     CustomerID: 1038,
 
-    CustomerName: 'Andrew McDownland',
-    CustomerEmail: 'andrew@gmail.com',
+    CustomerName: 'Pooja Mittal',
+    CustomerEmail: 'poojamittal@gmail.com',
     ProjectName: 'Real Homes WP Theme',
     Status: 'Pending',
     CustomerImage:
@@ -1453,8 +1453,8 @@ export const customersData = [
   },
   {
     CustomerID: 1039,
-    CustomerName: 'Christopher Jamil',
-    CustomerEmail: 'jamil@gmail.com',
+    CustomerName: 'Rahul Singh',
+    CustomerEmail: 'rahulsingh@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
     Status: 'Completed',
     CustomerImage:
