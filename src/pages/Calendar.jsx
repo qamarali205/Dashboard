@@ -20,6 +20,16 @@ const Scheduler = () => {
     // eslint-disable-next-line no-param-reassign
     arg.navigation.enable = true;
   };
+  var curday = function(sp){
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth()+1; //As January is 0.
+    var yyyy = today.getFullYear();
+    
+    if(dd<10) dd='0'+dd;
+    if(mm<10) mm='0'+mm;
+    return (mm+sp+dd+sp+yyyy);
+    };
 
   return (
     <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
@@ -27,7 +37,7 @@ const Scheduler = () => {
       <ScheduleComponent
         height="650px"
         ref={(schedule) => setScheduleObj(schedule)}
-        selectedDate={new Date(2021, 0, 10)}
+        selectedDate={new Date(2023, 3, 10)}
         eventSettings={{ dataSource: scheduleData }}
         dragStart={onDragStart}
       >
@@ -44,7 +54,7 @@ const Scheduler = () => {
             <tr style={{ height: '50px' }}>
               <td style={{ width: '100%' }}>
                 <DatePickerComponent
-                  value={new Date(2021, 0, 10)}
+                  value={curday(',')}
                   showClearButton={false}
                   placeholder="Current Date"
                   floatLabelType="Always"
