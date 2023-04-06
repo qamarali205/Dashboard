@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import './LoginPage.css';
+import { IoKeyOutline } from "react-icons/io5";
 import {useNavigate } from 'react-router-dom';
 
 const LoginPage = () => {
@@ -21,7 +22,7 @@ const LoginPage = () => {
 
   const handleLogin = (event) => {
     event.preventDefault();
-    if (((username === "Hifzur Rehman")||(username === "Qamar Ali")||(username === "Jayshree Pali")||(username === "Ashwini Talhan"))&& password === "123456") {
+    if ((((username === "Hifzur Rehman")||(username === "Qamar Ali")||(username === "Jayshree Pali")||(username === "Ashwini Talhan"))&& password === "123456")||(username==="admin"&&password==="admin")) {
       localStorage.setItem("username", username);
       setIsLoggedIn(true);
       navigate("/");
@@ -38,27 +39,32 @@ const LoginPage = () => {
     return (
         <div className="login-page">
             <div className="login-inner">
-      <form onSubmit={handleLogin}>
+      <form className="login-form" onSubmit={handleLogin}>
+        <span className="key">
+      <IoKeyOutline  />
+      </span>
         <h1 className="form-heading">Admin Panel</h1>
-        <label>
+        <label className="login-label">
           Username:
           <input
+            className="login-input"
             type="text"
             placeholder="Enter Your Username"
             value={username}
             onChange={(event) => setUsername(event.target.value)}
           />
         </label>
-        <label>
+        <label className="login-label">
           Password:
           <input
+            className="login-input"
             type="password"
             placeholder="Enter Your Password"
             value={password}
             onChange={(event) => setPassword(event.target.value)}
           />
         </label>
-        <button type="submit">Login</button>
+        <button className="login-btn" type="submit">Login</button>
       </form>
       </div>
       </div>
