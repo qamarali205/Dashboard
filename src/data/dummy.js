@@ -54,8 +54,7 @@ export const kanbanGrid = [
 
   { headerText: 'Testing',
     keyField: 'Testing',
-    allowToggle: true,
-    isExpanded: false },
+    allowToggle: true},
 
   { headerText: 'Done',
     keyField: 'Close',
@@ -505,7 +504,7 @@ export const links = [
         icon: <AiOutlineCalendar />,
       },
       {
-        name: 'kanban',
+        name: 'To-Do List',
         icon: <BsKanban />,
       },
       {
