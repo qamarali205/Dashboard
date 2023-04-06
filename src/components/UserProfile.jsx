@@ -19,10 +19,17 @@ const UserProfile = () => {
 
 
   const handleLogout = () => {
+    const confirmBox = window.confirm(
+      "Do you really want to Logout?"
+    )
+    if (confirmBox === false) {
+    }
+    else{
     localStorage.removeItem("username");
     setIsLoggedIn(false);
     navigate("/");
     window.location.reload();
+    }
   };
 
   return (
