@@ -5,6 +5,10 @@ import { Button } from '.';
 import { userProfileData } from '../data/dummy';
 import { useStateContext } from '../contexts/ContextProvider';
 import avatar from '../data/avatar.jpg';
+import profilepic1 from '../data/profilepic1.jpg';
+import profilepic2 from '../data/profilepic2.jpg';
+import profilepic3 from '../data/profilepic3.png';
+import profilepic4 from '../data/profilepic4.jpg';
 import { useState, useEffect} from 'react';
 import {useNavigate } from 'react-router-dom';
 
@@ -13,9 +17,29 @@ const UserProfile = () => {
   // const [username, setUsername] = useState("");
   const { currentColor } = useStateContext();
   const [isLoggedIn, setIsLoggedIn] = useState(true);
+  let profilePic;
+  
 
     const storedUsername = localStorage.getItem("username");
+    
   
+
+      if(storedUsername==="Hifzur Rehman"){
+        profilePic = profilepic1
+      }
+      else if(storedUsername==="Qamar Ali"){
+        profilePic =profilepic2;
+      }
+      else if(storedUsername==="Jayshree Pali"){
+        profilePic = profilepic3;
+      }
+      else if(storedUsername==="Ashwini Talhan"){
+        profilePic = profilepic4;
+      }
+      else{
+        profilePic=profilepic1;
+      }
+
 
 
   const handleLogout = () => {
@@ -47,7 +71,7 @@ const UserProfile = () => {
       <div className="flex gap-5 items-center mt-6 border-color border-b-1 pb-6">
         <img
           className="rounded-full h-24 w-24"
-          src={avatar}
+          src={profilePic}
           alt="user-profile"
         />
         <div>
