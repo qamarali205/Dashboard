@@ -4,7 +4,7 @@ import { MdOutlineCancel } from 'react-icons/md';
 import { Button } from '.';
 import { userProfileData } from '../data/dummy';
 import { useStateContext } from '../contexts/ContextProvider';
-import avatar from '../data/avatar.jpg';
+// import avatar from '../data/avatar.jpg';
 import profilepic1 from '../data/profilepic1.jpg';
 import profilepic2 from '../data/profilepic2.jpeg';
 import profilepic3 from '../data/profilepic3.jpg';

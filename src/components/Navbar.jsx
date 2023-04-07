@@ -6,7 +6,12 @@ import { RiNotification3Line } from 'react-icons/ri';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
-import avatar from '../data/avatar.jpg';
+import profilepic1 from '../data/profilepic1.jpg';
+import profilepic2 from '../data/profilepic2.jpeg';
+import profilepic3 from '../data/profilepic3.jpg';
+import profilepic4 from '../data/profilepic4.jpg';
+
+// import avatar from '../data/avatar.jpg';
 import { Cart, Chat, Notification, UserProfile } from '.';
 import { useStateContext } from '../contexts/ContextProvider';
 
@@ -51,6 +56,23 @@ const Navbar = () => {
   const handleActiveMenu = () => setActiveMenu(!activeMenu);
   const storedUsername = localStorage.getItem("username");
 
+  let profilePic;
+  if(storedUsername==="Hifzur Rehman"){
+    profilePic = profilepic1
+  }
+  else if(storedUsername==="Qamar Ali"){
+    profilePic =profilepic2;
+  }
+  else if(storedUsername==="Jayshree Pali"){
+    profilePic = profilepic3;
+  }
+  else if(storedUsername==="Ashwini Talhan"){
+    profilePic = profilepic4;
+  }
+  else{
+    profilePic=profilepic1;
+  }
+
   return (
     <div className="flex justify-between p-2 md:ml-6 md:mr-6 relative">
 
@@ -66,7 +88,7 @@ const Navbar = () => {
           >
             <img
               className="rounded-full w-8 h-8"
-              src={avatar}
+              src={profilePic}
               alt="user-profile"
             />
             <p>
