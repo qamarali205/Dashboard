@@ -53,6 +53,7 @@ const LoginPage = () => {
             value={username}
             onChange={(event) => setUsername(event.target.value)}
           />
+        <p className="hints">To access username: <span>admin</span></p>
         </label>
         <label className="login-label">
           Password:
@@ -63,6 +64,7 @@ const LoginPage = () => {
             value={password}
             onChange={(event) => setPassword(event.target.value)}
           />
+          <p className="hints">To access password: <span>admin</span></p>
         </label>
         <button className="login-btn" type="submit">Login</button>
       </form>

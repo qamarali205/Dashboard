@@ -109,3 +109,12 @@
   margin-bottom: 20px;
   text-align: center;
 }
+.hints{
+  margin-top: 5px;
+  margin-bottom: -15px;
+}
+.hints>span{
+  color: green;
+   font-size: 20px;
+   font-weight: bolder;
+}
