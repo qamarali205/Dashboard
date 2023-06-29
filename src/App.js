@@ -7,6 +7,7 @@ import { Navbar, Footer, Sidebar, ThemeSettings } from './components';
 import { Ecommerce, Orders, Calendar, Employees, Stacked, Pyramid, Customers, Kanban, Line, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor } from './pages';
 import './App.css';
 import LoginPage from './pages/LoginPage';
+import Signup from './pages/Signup';
 
 import { useStateContext } from './contexts/ContextProvider';
 
@@ -45,6 +46,8 @@ const App = () => {
     
     <Route path="/" element={(<LoginPage />)} />
     <Route path="/login" element={(<LoginPage />)} />
+    <Route path="/signup" element={(<Signup />)} />
+  
   </Routes>
   </BrowserRouter>
   </>

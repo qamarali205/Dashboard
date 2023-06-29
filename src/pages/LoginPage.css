@@ -18,6 +18,21 @@
   align-items: center;
 }
 
+.signup-link {
+  text-align: center;
+  margin-top: 1rem;
+  color: white;
+}
+
+.signup-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
 .login-form {
   display: flex;
   flex-direction: column;
@@ -108,4 +123,13 @@
   border-radius: 5px;
   margin-bottom: 20px;
   text-align: center;
+}
+.hints{
+  margin-top: 5px;
+  margin-bottom: -15px;
+}
+.hints>span{
+  color: green;
+   font-size: 20px;
+   font-weight: bolder;
 }
