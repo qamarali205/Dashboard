@@ -5,8 +5,7 @@ import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import InputControl from "../data/InputControl.js";
 import { auth } from "../data/firebase.js";
 
-import styles from "./Signup.css";
-
+import styles from './Signup.module.css';
 function Signup() {
   const navigate = useNavigate();
   const [values, setValues] = useState({

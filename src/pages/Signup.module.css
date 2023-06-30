@@ -1,0 +1,83 @@
+ 
+.container {
+  background-image: url(https://wallpaperaccess.com/full/2314950.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background: linear-gradient(to right, rgb(37, 37, 114), #4f3db2);*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heading{
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 34px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: black;
+}
+
+.innerBox {
+  min-width: 480px;
+  height: fit-content;
+  width: fit-content;
+  background-color: #fff;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer .error {
+  font-weight: bold;
+  font-size: 0.875rem;
+  color: #ff3300;
+  text-align: center;
+}
+
+.footer button {
+  outline: none;
+  border: none;
+  background-color: #0a60ab;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px 16px;
+  width: 100%;
+  transition: 100ms;
+  cursor: pointer;
+}
+
+.footer button:disabled {
+  background-color: gray !important;
+}
+
+.footer button:hover {
+  background-color: #28397d;
+}
+
+.footer p {
+  font-weight: 700;
+  color: #000;
+}
+
+.footer p span a {
+  font-weight: bold;
+  color:rgb(12, 54, 154);
+  letter-spacing: 1px;
+  font-size: 1rem;
+  text-decoration: none;
+}
