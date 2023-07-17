@@ -22,21 +22,6 @@ const LoginPage = () => {
     }
   }, [navigate]);
 
-  const handleGoogleSignIn = () => {
-    const provider = new GoogleAuthProvider();
-    signInWithPopup(auth, provider)
-      .then((result) => {
-        // Handle successful sign-in
-        console.log("Google Sign-In Successful:", result);
-        navigate("/");
-        window.location.reload();
-      })
-      .catch((error) => {
-        // Handle sign-in error
-        console.error("Google Sign-In Error:", error);
-      });
-  };
-
   const handleLogin = (event) => {
     event.preventDefault();
 
@@ -112,12 +97,6 @@ const LoginPage = () => {
           <button className="login-btn" type="submit">
             Login
           </button>
-
-          <div>
-            <button className="login-btn" onClick={handleGoogleSignIn}>
-              Sign in with Google
-            </button>
-          </div>
           <div className="signup-link">
             Don't have an account? <Link to="/Signup">Sign up</Link>
           </div>
