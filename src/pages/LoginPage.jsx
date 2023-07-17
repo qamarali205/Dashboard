@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./LoginPage.css";
 import { IoKeyOutline } from "react-icons/io5";
 import { useNavigate, Link } from "react-router-dom";
-import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+//import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { auth } from "../data/firebase.js";
 import { signInWithEmailAndPassword } from "firebase/auth";
 
