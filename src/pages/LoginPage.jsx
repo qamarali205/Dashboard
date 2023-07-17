@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
-import './LoginPage.css';
+import "./LoginPage.css";
 import { IoKeyOutline } from "react-icons/io5";
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate, Link } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../data/firebase.js";
+import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 
 const LoginPage = () => {
   const [username, setUsername] = useState("");
@@ -25,8 +26,26 @@ const LoginPage = () => {
       setUsername(storedUsername);
       setPassword(storedPassword);
       setIsLoggedIn(true);
+      navigate("/");
     }
   }, []);
+
+const handleGoogleSignIn = () => {
+  const provider = new GoogleAuthProvider();
+  signInWithPopup(auth, provider)
+    .then((result) => {
+      // Handle successful sign-in
+      console.log("Google Sign-In Successful:", result);
+      navigate("/");
+      window.location.reload();
+    })
+    .catch((error) => {
+      // Handle sign-in error
+      console.error("Google Sign-In Error:", error);
+      setErrorMsg(error.message);
+    });
+};
+
 
   const handleLogin = (event) => {
     event.preventDefault();
@@ -81,7 +100,7 @@ const LoginPage = () => {
               onChange={(event) =>
                 setValues((prev) => ({
                   ...prev,
-                  email: event.target.value
+                  email: event.target.value,
                 }))
               }
             />
@@ -96,12 +115,17 @@ const LoginPage = () => {
               onChange={(event) =>
                 setValues((prev) => ({
                   ...prev,
-                  pass: event.target.value
+                  pass: event.target.value,
                 }))
               }
             />
           </label>
-          <button className="login-btn" type="submit">Login</button>
+          <button className="login-btn" type="submit">
+            Login
+          </button>
+           <button className="login-btn" onClick={handleGoogleSignIn}>
+      Sign in with Google
+    </button>
           <div className="signup-link">
             Don't have an account? <Link to="/Signup">Sign up</Link>
           </div>
