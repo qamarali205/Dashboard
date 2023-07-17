@@ -2,53 +2,57 @@ import React, { useState, useEffect } from "react";
 import "./LoginPage.css";
 import { IoKeyOutline } from "react-icons/io5";
 import { useNavigate, Link } from "react-router-dom";
-import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../data/firebase.js";
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { auth } from "../data/firebase.js";
+import { signInWithEmailAndPassword } from "firebase/auth";
 
 const LoginPage = () => {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const navigate = useNavigate();
 
   const [values, setValues] = useState({
     email: "",
     pass: "",
   });
-  const [errorMsg, setErrorMsg] = useState("");
-  const [submitButtonDisabled, setSubmitButtonDisabled] = useState(false);
 
   useEffect(() => {
     const storedUsername = localStorage.getItem("username");
     const storedPassword = localStorage.getItem("password");
     if (storedUsername && storedPassword) {
-      setUsername(storedUsername);
-      setPassword(storedPassword);
-      setIsLoggedIn(true);
       navigate("/");
     }
-  }, []);
+  }, [navigate]);
 
-const handleGoogleSignIn = () => {
-  const provider = new GoogleAuthProvider();
-  signInWithPopup(auth, provider)
-    .then((result) => {
-      // Handle successful sign-in
-      console.log("Google Sign-In Successful:", result);
-      navigate("/");
-      window.location.reload();
-    })
-    .catch((error) => {
-      // Handle sign-in error
-      console.error("Google Sign-In Error:", error);
-      setErrorMsg(error.message);
-    });
-};
-
+  const handleGoogleSignIn = () => {
+    const provider = new GoogleAuthProvider();
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        // Handle successful sign-in
+        console.log("Google Sign-In Successful:", result);
+        navigate("/");
+        window.location.reload();
+      })
+      .catch((error) => {
+        // Handle sign-in error
+        console.error("Google Sign-In Error:", error);
+      });
+  };
 
   const handleLogin = (event) => {
     event.preventDefault();
+
+    const enteredEmail = values.email;
+    const enteredPassword = values.pass;
+
+    signInWithEmailAndPassword(auth, enteredEmail, enteredPassword).then(
+      (userCredential) => {
+        // Login successful
+        const user = userCredential.user;
+        localStorage.setItem("username", user.email);
+        navigate("/");
+        window.location.reload();
+      }
+    );
+
     if (
       ((values.email === "Hifzur Rehman" ||
         values.email === "Qamar Ali" ||
@@ -58,27 +62,12 @@ const handleGoogleSignIn = () => {
       (values.email === "admin" && values.pass === "admin")
     ) {
       localStorage.setItem("username", values.email);
-      setIsLoggedIn(true);
       navigate("/");
       window.location.reload();
     } else {
       if (!values.email || !values.pass) {
-        setErrorMsg("Fill all fields");
         return;
       }
-      setErrorMsg("");
-
-      setSubmitButtonDisabled(true);
-      signInWithEmailAndPassword(auth, values.email, values.pass)
-        .then(async (res) => {
-          setSubmitButtonDisabled(false);
-          navigate("/");
-          window.location.reload();
-        })
-        .catch((err) => {
-          setSubmitButtonDisabled(false);
-          setErrorMsg(err.message);
-        });
     }
   };
 
@@ -123,9 +112,12 @@ const handleGoogleSignIn = () => {
           <button className="login-btn" type="submit">
             Login
           </button>
-           <button className="login-btn" onClick={handleGoogleSignIn}>
-      Sign in with Google
-    </button>
+
+          <div>
+            <button className="login-btn" onClick={handleGoogleSignIn}>
+              Sign in with Google
+            </button>
+          </div>
           <div className="signup-link">
             Don't have an account? <Link to="/Signup">Sign up</Link>
           </div>
